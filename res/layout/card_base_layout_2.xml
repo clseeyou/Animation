@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyCard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000ff">
+    <TextView
+        android:id="@+id/lyMain1"
+        android:layout_width="fill_parent"
+       	android:layout_height="50dp"
+       	android:layout_toLeftOf="@+id/ivTriangle"
+       	android:background="#ff0000"
+       	android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+       	android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/lyMain2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#00ff00"
+        android:visibility="gone" />
+
+	<ImageView 
+	    android:id="@+id/ivTriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_above="@+id/ivDivider1"
+        android:src="@drawable/triangle"
+        android:visibility="visible"/>
+	<ImageView
+   		android:id="@+id/ivDivider1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/lyMain1"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_timeline"
+        android:visibility="visible" />
+	<ImageView
+   		android:id="@+id/ivDivider2"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/lyMain2"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_timeline"
+        android:visibility="gone" />
+</RelativeLayout>

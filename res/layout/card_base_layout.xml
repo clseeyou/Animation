@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#0000ff">
+	<RelativeLayout
+	    android:id="@+id/lyCard"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<FrameLayout 
+		    android:id="@+id/lyMain"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/ivTriangle">
+		    <TextView
+		        android:layout_width="wrap_content"
+	        	android:layout_height="50dp"
+	        	android:background="#ff0000"
+	        	android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView" />
+
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dp"
+		        android:background="#8000ff00" />
+
+		</FrameLayout>
+		<ImageView 
+		    android:id="@+id/ivTriangle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="8dp"
+	        android:src="@drawable/triangle"/>
+	</RelativeLayout>
+	<ImageView
+   		android:id="@+id/ivDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_timeline" />
+</LinearLayout>
