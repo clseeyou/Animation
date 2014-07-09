@@ -3,4 +3,4 @@ Animation
 
 android animation
 
-this is my firt github app
+this is my firt github app, come on~
